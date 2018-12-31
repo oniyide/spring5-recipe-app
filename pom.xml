@@ -82,6 +82,9 @@
                     </execution>
                 </executions>
             </plugin>
+            <!--Even though surefire comes with spring boot starter project, I had to add it simply because circle CI was failing
+            to execute org.apache.maven.plugins:maven-surefire-plugin:2.22.1:test so I added below.
+            -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
