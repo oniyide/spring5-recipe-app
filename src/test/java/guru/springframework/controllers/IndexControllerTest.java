@@ -37,7 +37,7 @@ public class IndexControllerTest {
     public void setUp() {
 
         MockitoAnnotations.initMocks(this); // initializes our mocks
-        indexController = new IndexController((recipeService));
+        indexController = new IndexController(recipeService);
     }
 
     @Test
